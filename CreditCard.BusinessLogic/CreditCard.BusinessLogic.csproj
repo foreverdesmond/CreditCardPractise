@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Services\" />
+    <None Remove="Utilities\" />
+    <None Remove="IService\" />
+    <None Remove="Factory\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Services\" />
+    <Folder Include="Utilities\" />
+    <Folder Include="IService\" />
+    <Folder Include="Factory\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CreditCard.Models\CreditCard.Models.csproj" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,55 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <AssemblyName>CreditCard.Test</AssemblyName>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+
+    <IsPackable>false</IsPackable>
+    <IsTestProject>true</IsTestProject>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="coverlet.collector" Version="6.0.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.8.0" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.5.3" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
+    <PackageReference Include="Moq" Version="4.20.72" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Testing" Version="8.0.10" />
+    <PackageReference Include="xunit" Version="2.9.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Using Include="Xunit" />
+  </ItemGroup>
+
+  
+
+  <ItemGroup>
+    <None Remove="ServicesTests\" />
+    <None Remove="ControllersTests\" />
+    <None Remove="UtilitiesTests\" />
+    <None Remove="Nlog.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ServicesTests\" />
+    <Folder Include="ControllersTests\" />
+    <Folder Include="UtilitiesTests\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CreditCard.BusinessLogic\CreditCard.BusinessLogic.csproj" />
+    <ProjectReference Include="..\CreditCard.Models\CreditCard.Models.csproj" />
+    <ProjectReference Include="..\CreditCard.API\CreditCard.API.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="ControllersTests\CreditCardControllerTests.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Nlog.config" Condition="'$(ExcludeConfigFilesFromBuildOutput)'!='true'">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
+</Project>

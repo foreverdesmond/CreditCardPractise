@@ -1,0 +1,31 @@
+/Users/richy/Projects/Credit Card Practise/CreditCardPractise/CreditCard.BusinessLogic/bin/Debug/net8.0/CreditCard.BusinessLogic.deps.json
+/Users/richy/Projects/Credit Card Practise/CreditCardPractise/CreditCard.BusinessLogic/bin/Debug/net8.0/CreditCard.BusinessLogic.dll
+/Users/richy/Projects/Credit Card Practise/CreditCardPractise/CreditCard.BusinessLogic/bin/Debug/net8.0/CreditCard.BusinessLogic.pdb
+/Users/richy/Projects/Credit Card Practise/CreditCardPractise/CreditCard.BusinessLogic/bin/Debug/net8.0/CreditCard.Models.dll
+/Users/richy/Projects/Credit Card Practise/CreditCardPractise/CreditCard.BusinessLogic/bin/Debug/net8.0/CreditCard.Models.pdb
+/Users/richy/Projects/Credit Card Practise/CreditCardPractise/CreditCard.BusinessLogic/obj/Debug/net8.0/CreditCard.BusinessLogic.csproj.AssemblyReference.cache
+/Users/richy/Projects/Credit Card Practise/CreditCardPractise/CreditCard.BusinessLogic/obj/Debug/net8.0/CreditCard.BusinessLogic.GeneratedMSBuildEditorConfig.editorconfig
+/Users/richy/Projects/Credit Card Practise/CreditCardPractise/CreditCard.BusinessLogic/obj/Debug/net8.0/CreditCard.BusinessLogic.AssemblyInfoInputs.cache
+/Users/richy/Projects/Credit Card Practise/CreditCardPractise/CreditCard.BusinessLogic/obj/Debug/net8.0/CreditCard.BusinessLogic.AssemblyInfo.cs
+/Users/richy/Projects/Credit Card Practise/CreditCardPractise/CreditCard.BusinessLogic/obj/Debug/net8.0/CreditCard.BusinessLogic.csproj.CoreCompileInputs.cache
+/Users/richy/Projects/Credit Card Practise/CreditCardPractise/CreditCard.BusinessLogic/obj/Debug/net8.0/CreditCa.3C16BD30.Up2Date
+/Users/richy/Projects/Credit Card Practise/CreditCardPractise/CreditCard.BusinessLogic/obj/Debug/net8.0/CreditCard.BusinessLogic.dll
+/Users/richy/Projects/Credit Card Practise/CreditCardPractise/CreditCard.BusinessLogic/obj/Debug/net8.0/refint/CreditCard.BusinessLogic.dll
+/Users/richy/Projects/Credit Card Practise/CreditCardPractise/CreditCard.BusinessLogic/obj/Debug/net8.0/CreditCard.BusinessLogic.pdb
+/Users/richy/Projects/Credit Card Practise/CreditCardPractise/CreditCard.BusinessLogic/obj/Debug/net8.0/ref/CreditCard.BusinessLogic.dll
+/Users/richy/Projects/CreditCardPractise/CreditCardPractise/CreditCard.BusinessLogic/bin/Debug/net8.0/CreditCard.BusinessLogic.deps.json
+/Users/richy/Projects/CreditCardPractise/CreditCardPractise/CreditCard.BusinessLogic/bin/Debug/net8.0/CreditCard.BusinessLogic.dll
+/Users/richy/Projects/CreditCardPractise/CreditCardPractise/CreditCard.BusinessLogic/bin/Debug/net8.0/CreditCard.BusinessLogic.pdb
+/Users/richy/Projects/CreditCardPractise/CreditCardPractise/CreditCard.BusinessLogic/bin/Debug/net8.0/CreditCard.Models.dll
+/Users/richy/Projects/CreditCardPractise/CreditCardPractise/CreditCard.BusinessLogic/bin/Debug/net8.0/CreditCard.Models.pdb
+/Users/richy/Projects/CreditCardPractise/CreditCardPractise/CreditCard.BusinessLogic/obj/Debug/net8.0/CreditCard.BusinessLogic.csproj.AssemblyReference.cache
+/Users/richy/Projects/CreditCardPractise/CreditCardPractise/CreditCard.BusinessLogic/obj/Debug/net8.0/CreditCard.BusinessLogic.GeneratedMSBuildEditorConfig.editorconfig
+/Users/richy/Projects/CreditCardPractise/CreditCardPractise/CreditCard.BusinessLogic/obj/Debug/net8.0/CreditCard.BusinessLogic.AssemblyInfoInputs.cache
+/Users/richy/Projects/CreditCardPractise/CreditCardPractise/CreditCard.BusinessLogic/obj/Debug/net8.0/CreditCard.BusinessLogic.AssemblyInfo.cs
+/Users/richy/Projects/CreditCardPractise/CreditCardPractise/CreditCard.BusinessLogic/obj/Debug/net8.0/CreditCard.BusinessLogic.csproj.CoreCompileInputs.cache
+/Users/richy/Projects/CreditCardPractise/CreditCardPractise/CreditCard.BusinessLogic/obj/Debug/net8.0/CreditCard.BusinessLogic.sourcelink.json
+/Users/richy/Projects/CreditCardPractise/CreditCardPractise/CreditCard.BusinessLogic/obj/Debug/net8.0/CreditCa.3C16BD30.Up2Date
+/Users/richy/Projects/CreditCardPractise/CreditCardPractise/CreditCard.BusinessLogic/obj/Debug/net8.0/CreditCard.BusinessLogic.dll
+/Users/richy/Projects/CreditCardPractise/CreditCardPractise/CreditCard.BusinessLogic/obj/Debug/net8.0/refint/CreditCard.BusinessLogic.dll
+/Users/richy/Projects/CreditCardPractise/CreditCardPractise/CreditCard.BusinessLogic/obj/Debug/net8.0/CreditCard.BusinessLogic.pdb
+/Users/richy/Projects/CreditCardPractise/CreditCardPractise/CreditCard.BusinessLogic/obj/Debug/net8.0/ref/CreditCard.BusinessLogic.dll

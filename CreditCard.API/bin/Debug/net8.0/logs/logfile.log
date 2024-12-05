@@ -1,0 +1,604 @@
+2024-12-05 11:44:28.2611 ERROR An unhandled exception occurred. System.FormatException: The input string 'bb' was not in a correct format.
+   at System.Number.ThrowFormatException[TChar](ReadOnlySpan`1 value)
+   at System.Int32.Parse(String s)
+   at CreditCard.Models.DTOs.CreditCardDto.get_ExpiryDate() in /Users/richy/Projects/Credit Card Practise/CreditCardPractise/CreditCard.Models/DTOs/CreditCardDto.cs:line 37
+   at Microsoft.Extensions.Internal.PropertyHelper.CallNullSafePropertyGetter[TDeclaringType,TValue](Func`2 getter, Object target)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationEntry.get_Model()
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor.VisitChildren(IValidationStrategy strategy)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor.VisitComplexType(IValidationStrategy defaultStrategy)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor.VisitImplementation(ModelMetadata& metadata, String& key, Object model)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor.Visit(ModelMetadata metadata, String key, Object model)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ObjectModelValidator.Validate(ActionContext actionContext, ValidationStateDictionary validationState, String prefix, Object model, ModelMetadata metadata, Object container)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder.EnforceBindRequiredAndValidate(ObjectModelValidator baseObjectValidator, ActionContext actionContext, ParameterDescriptor parameter, ModelMetadata metadata, ModelBindingContext modelBindingContext, ModelBindingResult modelBindingResult, Object container)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder.BindModelAsync(ActionContext actionContext, IModelBinder modelBinder, IValueProvider valueProvider, ParameterDescriptor parameter, ModelMetadata metadata, Object value, Object container)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerBinderDelegateProvider.<>c__DisplayClass0_0.<<CreateBinderDelegate>g__Bind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at CreditCard.API.ErrorHandling.GlobalExceptionHandler.InvokeAsync(HttpContext context) in /Users/richy/Projects/Credit Card Practise/CreditCardPractise/CreditCard.API/ErrorHandling/GlobalExceptionHandler.cs:line 19
+2024-12-05 11:53:16.4821 ERROR An unhandled exception occurred. System.InvalidOperationException: No service for type 'CreditCard.API.Filters.ModelValidationFilter' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.AspNetCore.Mvc.ServiceFilterAttribute.CreateInstance(IServiceProvider serviceProvider)
+   at Microsoft.AspNetCore.Mvc.Filters.DefaultFilterProvider.ProvideFilter(FilterProviderContext context, FilterItem filterItem)
+   at Microsoft.AspNetCore.Mvc.Filters.DefaultFilterProvider.OnProvidersExecuting(FilterProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Filters.FilterFactory.CreateUncachedFiltersCore(IFilterProvider[] filterProviders, ActionContext actionContext, List`1 filterItems)
+   at Microsoft.AspNetCore.Mvc.Filters.FilterFactory.GetAllFilters(IFilterProvider[] filterProviders, ActionContext actionContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvokerCache.GetCachedResult(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Routing.ControllerRequestDelegateFactory.<>c__DisplayClass12_0.<CreateRequestDelegate>b__0(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at CreditCard.API.ErrorHandling.GlobalExceptionHandler.InvokeAsync(HttpContext context) in /Users/richy/Projects/Credit Card Practise/CreditCardPractise/CreditCard.API/ErrorHandling/GlobalExceptionHandler.cs:line 19
+2024-12-05 11:56:17.6491 INFO Executing action: CreditCardController.CreditCardIsValid (CreditCard.API) 
+2024-12-05 11:56:17.6594 INFO Request data: System.Collections.Generic.Dictionary`2[System.String,System.Object] 
+2024-12-05 11:56:17.6639 INFO Response data: { CardNumber = 5677152247929019, IsValid = False } 
+2024-12-05 11:56:26.6696 INFO Executing action: CreditCardController.CreditCardIsValid (CreditCard.API) 
+2024-12-05 11:56:26.6698 INFO Request data: System.Collections.Generic.Dictionary`2[System.String,System.Object] 
+2024-12-05 11:56:26.6698 INFO Response data: { CardNumber = 90866051812746, IsValid = True } 
+2024-12-05 11:56:37.1109 ERROR An exception occurred. System.FormatException: The input string '0b' was not in a correct format.
+   at System.Number.ThrowFormatException[TChar](ReadOnlySpan`1 value)
+   at System.Int32.Parse(String s)
+   at CreditCard.Models.DTOs.CreditCardDto.get_ExpiryDate() in /Users/richy/Projects/Credit Card Practise/CreditCardPractise/CreditCard.Models/DTOs/CreditCardDto.cs:line 37
+   at Microsoft.Extensions.Internal.PropertyHelper.CallNullSafePropertyGetter[TDeclaringType,TValue](Func`2 getter, Object target)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationEntry.get_Model()
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor.VisitChildren(IValidationStrategy strategy)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor.VisitComplexType(IValidationStrategy defaultStrategy)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor.VisitImplementation(ModelMetadata& metadata, String& key, Object model)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor.Visit(ModelMetadata metadata, String key, Object model)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ObjectModelValidator.Validate(ActionContext actionContext, ValidationStateDictionary validationState, String prefix, Object model, ModelMetadata metadata, Object container)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder.EnforceBindRequiredAndValidate(ObjectModelValidator baseObjectValidator, ActionContext actionContext, ParameterDescriptor parameter, ModelMetadata metadata, ModelBindingContext modelBindingContext, ModelBindingResult modelBindingResult, Object container)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder.BindModelAsync(ActionContext actionContext, IModelBinder modelBinder, IValueProvider valueProvider, ParameterDescriptor parameter, ModelMetadata metadata, Object value, Object container)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerBinderDelegateProvider.<>c__DisplayClass0_0.<<CreateBinderDelegate>g__Bind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|26_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+2024-12-05 12:00:26.2104 INFO Executing action: CreditCardController.CreditCardIsValid (CreditCard.API) 
+2024-12-05 12:00:26.2195 INFO Request data: System.Collections.Generic.Dictionary`2[System.String,System.Object] 
+2024-12-05 12:00:26.2242 INFO Response data: { CardNumber = 643118405809307, IsValid = False } 
+2024-12-05 12:00:44.9911 INFO Executing action: CreditCardController.CreditCardIsValid (CreditCard.API) 
+2024-12-05 12:00:44.9911 INFO Request data: System.Collections.Generic.Dictionary`2[System.String,System.Object] 
+2024-12-05 12:00:44.9931 INFO Response data: { CardNumber = 783299602798135, IsValid = True } 
+2024-12-05 14:28:29.3853 INFO Executing action: CreditCard.API.Controllers.CreditCardController.CreditCardIsValid (CreditCard.API) 
+2024-12-05 14:28:29.3948 INFO Request data: System.Collections.Generic.Dictionary`2[System.String,System.Object] 
+2024-12-05 14:28:34.4368 INFO Response data: { CardNumber = 4532015112830366, IsValid = True } 
+2024-12-05 14:50:43.0300 INFO Executing action: CreditCard.API.Controllers.CreditCardController.CreditCardIsValid (CreditCard.API) 
+2024-12-05 14:50:43.0414 INFO Request data: System.Collections.Generic.Dictionary`2[System.String,System.Object] 
+2024-12-05 14:50:43.0438 INFO Response data: { CardNumber = 371449635398431, IsValid = True } 
+2024-12-05 15:11:41.0927 INFO Executing action: CreditCard.API.Controllers.CreditCardController.CreditCardIsValid (CreditCard.API) 
+2024-12-05 15:11:41.1038 INFO Request data: System.Collections.Generic.Dictionary`2[System.String,System.Object] 
+2024-12-05 15:11:41.1061 INFO Response data: { CardNumber = 04045592376008, IsValid = False } 
+2024-12-05 15:12:42.3536 INFO Executing action: CreditCard.API.Controllers.CreditCardController.CreditCardIsValid (CreditCard.API) 
+2024-12-05 15:12:42.3546 INFO Request data: System.Collections.Generic.Dictionary`2[System.String,System.Object] 
+2024-12-05 15:12:42.3551 INFO Response data: { CardNumber = 1038318029582, IsValid = False } 
+2024-12-05 15:24:04.6808 INFO Executing action: CreditCard.API.Controllers.CreditCardController.CreditCardIsValid (CreditCard.API) 
+2024-12-05 15:24:04.6925 INFO Request data: System.Collections.Generic.Dictionary`2[System.String,System.Object] 
+2024-12-05 15:24:04.6949 INFO Response data: { CardNumber = 04045592376008, IsValid = False } 
+2024-12-05 15:26:26.8850 INFO Executing action: CreditCard.API.Controllers.CreditCardController.CreditCardIsValid (CreditCard.API) 
+2024-12-05 15:26:26.8850 INFO Request data: System.Collections.Generic.Dictionary`2[System.String,System.Object] 
+2024-12-05 15:26:26.8850 INFO Response data: { CardNumber = 14592096709725, IsValid = False } 
+ets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions.CreateDefaultBoundListenSocket(EndPoint endpoint)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.TransportManager.BindAsync(EndPoint endPoint, ConnectionDelegate connectionDelegate, EndpointConfig endpointConfig, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.<>c__DisplayClass28_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindAsync(ListenOptions[] listenOptions, AddressBindContext context, Func`2 useHttps, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(IHost host)
+   at Program.Main(String[] args) in /Users/richy/Projects/Credit Card Practise/CreditCardPractise/CreditCard.API/Program.cs:line 61
+AddressInUseException Address already in use Void Bind()
+SocketException Address already in use Void DoBind(System.Net.EndPoint, System.Net.SocketAddress)
+2024-12-05 15:29:21.5176 INFO Executing action: CreditCard.API.Controllers.CreditCardController.CreditCardIsValid (CreditCard.API) 
+2024-12-05 15:29:21.5295 INFO Request data: System.Collections.Generic.Dictionary`2[System.String,System.Object] 
+2024-12-05 15:29:21.5323 INFO Response data: { CardNumber = 4532015112830366, IsValid = True } 
+2024-12-05 15:34:17.7958 ERROR Stopped program because of exception System.IO.IOException: Failed to bind to address https://127.0.0.1:7021: address already in use.
+ ---> Microsoft.AspNetCore.Connections.AddressInUseException: Address already in use
+ ---> System.Net.Sockets.SocketException (48): Address already in use
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions.CreateDefaultBoundListenSocket(EndPoint endpoint)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.TransportManager.BindAsync(EndPoint endPoint, ConnectionDelegate connectionDelegate, EndpointConfig endpointConfig, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.<>c__DisplayClass28_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindAsync(ListenOptions[] listenOptions, AddressBindContext context, Func`2 useHttps, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(IHost host)
+   at Program.Main(String[] args) in /Users/richy/Projects/Credit Card Practise/CreditCardPractise/CreditCard.API/Program.cs:line 61
+AddressInUseException Address already in use Void Bind()
+SocketException Address already in use Void DoBind(System.Net.EndPoint, System.Net.SocketAddress)
+2024-12-05 15:34:34.0754 ERROR Stopped program because of exception System.IO.IOException: Failed to bind to address https://127.0.0.1:7021: address already in use.
+ ---> Microsoft.AspNetCore.Connections.AddressInUseException: Address already in use
+ ---> System.Net.Sockets.SocketException (48): Address already in use
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions.CreateDefaultBoundListenSocket(EndPoint endpoint)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.TransportManager.BindAsync(EndPoint endPoint, ConnectionDelegate connectionDelegate, EndpointConfig endpointConfig, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.<>c__DisplayClass28_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindAsync(ListenOptions[] listenOptions, AddressBindContext context, Func`2 useHttps, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(IHost host)
+   at Program.Main(String[] args) in /Users/richy/Projects/Credit Card Practise/CreditCardPractise/CreditCard.API/Program.cs:line 61
+AddressInUseException Address already in use Void Bind()
+SocketException Address already in use Void DoBind(System.Net.EndPoint, System.Net.SocketAddress)
+2024-12-05 15:34:52.7371 ERROR Stopped program because of exception System.IO.IOException: Failed to bind to address https://127.0.0.1:7021: address already in use.
+ ---> Microsoft.AspNetCore.Connections.AddressInUseException: Address already in use
+ ---> System.Net.Sockets.SocketException (48): Address already in use
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions.CreateDefaultBoundListenSocket(EndPoint endpoint)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.TransportManager.BindAsync(EndPoint endPoint, ConnectionDelegate connectionDelegate, EndpointConfig endpointConfig, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.<>c__DisplayClass28_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindAsync(ListenOptions[] listenOptions, AddressBindContext context, Func`2 useHttps, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(IHost host)
+   at Program.Main(String[] args) in /Users/richy/Projects/Credit Card Practise/CreditCardPractise/CreditCard.API/Program.cs:line 61
+AddressInUseException Address already in use Void Bind()
+SocketException Address already in use Void DoBind(System.Net.EndPoint, System.Net.SocketAddress)
+2024-12-05 15:35:15.2539 ERROR Stopped program because of exception System.IO.IOException: Failed to bind to address https://127.0.0.1:7021: address already in use.
+ ---> Microsoft.AspNetCore.Connections.AddressInUseException: Address already in use
+ ---> System.Net.Sockets.SocketException (48): Address already in use
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions.CreateDefaultBoundListenSocket(EndPoint endpoint)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.TransportManager.BindAsync(EndPoint endPoint, ConnectionDelegate connectionDelegate, EndpointConfig endpointConfig, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.<>c__DisplayClass28_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindAsync(ListenOptions[] listenOptions, AddressBindContext context, Func`2 useHttps, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(IHost host)
+   at Program.Main(String[] args) in /Users/richy/Projects/Credit Card Practise/CreditCardPractise/CreditCard.API/Program.cs:line 61
+AddressInUseException Address already in use Void Bind()
+SocketException Address already in use Void DoBind(System.Net.EndPoint, System.Net.SocketAddress)
+2024-12-05 15:37:49.8309 INFO Executing action: CreditCard.API.Controllers.CreditCardController.CreditCardIsValid (CreditCard.API) 
+2024-12-05 15:37:49.8424 INFO Request data: System.Collections.Generic.Dictionary`2[System.String,System.Object] 
+2024-12-05 15:37:49.8446 INFO Response data: { CardNumber = 6011514433546202, IsValid = False } 
+2024-12-05 15:37:58.1785 INFO Executing action: CreditCard.API.Controllers.CreditCardController.CreditCardIsValid (CreditCard.API) 
+2024-12-05 15:37:58.1785 INFO Request data: System.Collections.Generic.Dictionary`2[System.String,System.Object] 
+2024-12-05 15:37:58.1785 INFO Response data: { CardNumber = 4532015112830366, IsValid = True } 
+2024-12-05 15:41:12.9099 INFO Executing action: CreditCard.API.Controllers.CreditCardController.CreditCardIsValid (CreditCard.API) 
+2024-12-05 15:41:12.9214 INFO Request data: System.Collections.Generic.Dictionary`2[System.String,System.Object] 
+2024-12-05 15:41:12.9237 INFO Response data: { CardNumber = 4532015112830366, IsValid = True } 
+2024-12-05 15:41:22.8611 INFO Executing action: CreditCard.API.Controllers.CreditCardController.CreditCardIsValid (CreditCard.API) 
+2024-12-05 15:41:22.8611 INFO Request data: System.Collections.Generic.Dictionary`2[System.String,System.Object] 
+2024-12-05 15:41:22.8618 INFO Response data: { CardNumber = 4532015112830366, IsValid = True } 
+2024-12-05 15:50:34.4516 INFO Executing action: CreditCard.API.Controllers.CreditCardController.CreditCardIsValid (CreditCard.API) 
+2024-12-05 15:50:34.4578 INFO Request data: System.Collections.Generic.Dictionary`2[System.String,System.Object] 
+2024-12-05 15:50:34.4590 INFO Response data: { CardNumber = 1234567812345678, IsValid = False } 
+2024-12-05 15:50:34.4990 INFO Executing action: CreditCard.API.Controllers.CreditCardController.CreditCardIsValid (CreditCard.API) 
+2024-12-05 15:50:34.4990 INFO Request data: System.Collections.Generic.Dictionary`2[System.String,System.Object] 
+2024-12-05 15:50:34.4990 INFO Response data: { CardNumber = 4532015112830367, IsValid = False } 
+2024-12-05 15:50:34.5215 INFO Executing action: CreditCard.API.Controllers.CreditCardController.CreditCardIsValid (CreditCard.API) 
+2024-12-05 15:50:34.5215 INFO Request data: System.Collections.Generic.Dictionary`2[System.String,System.Object] 
+2024-12-05 15:50:34.5215 INFO Response data: { CardNumber = 371449635398431, IsValid = True } 
+2024-12-05 15:50:34.5617 INFO Executing action: CreditCard.API.Controllers.CreditCardController.CreditCardIsValid (CreditCard.API) 
+2024-12-05 15:50:34.5617 INFO Request data: System.Collections.Generic.Dictionary`2[System.String,System.Object] 
+2024-12-05 15:50:34.5619 INFO Response data: { CardNumber = 6011514433546202, IsValid = False } 
+2024-12-05 15:50:34.6608 INFO Executing action: CreditCard.API.Controllers.CreditCardController.CreditCardIsValid (CreditCard.API) 
+2024-12-05 15:50:34.6609 INFO Request data: System.Collections.Generic.Dictionary`2[System.String,System.Object] 
+2024-12-05 15:50:34.6609 INFO Response data: { CardNumber = 6011514433546201, IsValid = True } 
+2024-12-05 15:50:34.7002 INFO Executing action: CreditCard.API.Controllers.CreditCardController.CreditCardIsValid (CreditCard.API) 
+2024-12-05 15:50:34.7002 INFO Request data: System.Collections.Generic.Dictionary`2[System.String,System.Object] 
+2024-12-05 15:50:34.7002 INFO Response data: { CardNumber = 378282246310005, IsValid = True } 
+2024-12-05 15:50:34.7211 INFO Executing action: CreditCard.API.Controllers.CreditCardController.CreditCardIsValid (CreditCard.API) 
+2024-12-05 15:50:34.7211 INFO Request data: System.Collections.Generic.Dictionary`2[System.String,System.Object] 
+2024-12-05 15:50:34.7211 INFO Response data: { CardNumber = 4532015112830366, IsValid = True } 
+2024-12-05 15:50:34.7408 INFO Executing action: CreditCard.API.Controllers.CreditCardController.CreditCardIsValid (CreditCard.API) 
+2024-12-05 15:50:34.7410 INFO Request data: System.Collections.Generic.Dictionary`2[System.String,System.Object] 
+2024-12-05 15:50:34.7410 INFO Response data: { CardNumber = 5111111111111118, IsValid = True } 
+2024-12-05 15:50:34.8160 INFO Executing action: CreditCard.API.Controllers.CreditCardController.CreditCardIsValid (CreditCard.API) 
+2024-12-05 15:50:34.8160 INFO Request data: System.Collections.Generic.Dictionary`2[System.String,System.Object] 
+2024-12-05 15:50:34.8160 INFO Response data: { CardNumber = 4532015112830366, IsValid = True } 
+2024-12-05 15:50:34.8351 INFO Executing action: CreditCard.API.Controllers.CreditCardController.CreditCardIsValid (CreditCard.API) 
+2024-12-05 15:50:34.8351 INFO Request data: System.Collections.Generic.Dictionary`2[System.String,System.Object] 
+2024-12-05 15:50:34.8351 INFO Response data: { CardNumber = 4532015112830366, IsValid = True } 
+2024-12-05 15:51:16.8137 INFO Executing action: CreditCard.API.Controllers.CreditCardController.CreditCardIsValid (CreditCard.API) 
+2024-12-05 15:51:16.8137 INFO Request data: System.Collections.Generic.Dictionary`2[System.String,System.Object] 
+2024-12-05 15:51:16.8144 INFO Response data: { CardNumber = 1234567812345678, IsValid = False } 
+2024-12-05 15:51:16.8574 INFO Executing action: CreditCard.API.Controllers.CreditCardController.CreditCardIsValid (CreditCard.API) 
+2024-12-05 15:51:16.8574 INFO Request data: System.Collections.Generic.Dictionary`2[System.String,System.Object] 
+2024-12-05 15:51:16.8574 INFO Response data: { CardNumber = 4532015112830367, IsValid = False } 
+2024-12-05 15:51:16.8789 INFO Executing action: CreditCard.API.Controllers.CreditCardController.CreditCardIsValid (CreditCard.API) 
+2024-12-05 15:51:16.8789 INFO Request data: System.Collections.Generic.Dictionary`2[System.String,System.Object] 
+2024-12-05 15:51:16.8789 INFO Response data: { CardNumber = 371449635398431, IsValid = True } 
+2024-12-05 15:51:16.9147 INFO Executing action: CreditCard.API.Controllers.CreditCardController.CreditCardIsValid (CreditCard.API) 
+2024-12-05 15:51:16.9147 INFO Request data: System.Collections.Generic.Dictionary`2[System.String,System.Object] 
+2024-12-05 15:51:16.9147 INFO Response data: { CardNumber = 6011514433546202, IsValid = False } 
+2024-12-05 15:51:16.9893 INFO Executing action: CreditCard.API.Controllers.CreditCardController.CreditCardIsValid (CreditCard.API) 
+2024-12-05 15:51:16.9894 INFO Request data: System.Collections.Generic.Dictionary`2[System.String,System.Object] 
+2024-12-05 15:51:16.9894 INFO Response data: { CardNumber = 6011514433546201, IsValid = True } 
+2024-12-05 15:51:17.0266 INFO Executing action: CreditCard.API.Controllers.CreditCardController.CreditCardIsValid (CreditCard.API) 
+2024-12-05 15:51:17.0266 INFO Request data: System.Collections.Generic.Dictionary`2[System.String,System.Object] 
+2024-12-05 15:51:17.0266 INFO Response data: { CardNumber = 378282246310005, IsValid = True } 
+2024-12-05 15:51:17.0459 INFO Executing action: CreditCard.API.Controllers.CreditCardController.CreditCardIsValid (CreditCard.API) 
+2024-12-05 15:51:17.0459 INFO Request data: System.Collections.Generic.Dictionary`2[System.String,System.Object] 
+2024-12-05 15:51:17.0459 INFO Response data: { CardNumber = 4532015112830366, IsValid = True } 
+2024-12-05 15:51:17.0656 INFO Executing action: CreditCard.API.Controllers.CreditCardController.CreditCardIsValid (CreditCard.API) 
+2024-12-05 15:51:17.0656 INFO Request data: System.Collections.Generic.Dictionary`2[System.String,System.Object] 
+2024-12-05 15:51:17.0656 INFO Response data: { CardNumber = 5111111111111118, IsValid = True } 
+2024-12-05 15:51:17.1157 INFO Executing action: CreditCard.API.Controllers.CreditCardController.CreditCardIsValid (CreditCard.API) 
+2024-12-05 15:51:17.1157 INFO Request data: System.Collections.Generic.Dictionary`2[System.String,System.Object] 
+2024-12-05 15:51:17.1157 INFO Response data: { CardNumber = 4532015112830366, IsValid = True } 
+2024-12-05 15:51:17.1361 INFO Executing action: CreditCard.API.Controllers.CreditCardController.CreditCardIsValid (CreditCard.API) 
+2024-12-05 15:51:17.1361 INFO Request data: System.Collections.Generic.Dictionary`2[System.String,System.Object] 
+2024-12-05 15:51:17.1361 INFO Response data: { CardNumber = 4532015112830366, IsValid = True } 
+2024-12-05 16:10:43.9696 INFO Executing action: CreditCard.API.Controllers.CreditCardController.CreditCardIsValid (CreditCard.API) 
+2024-12-05 16:10:43.9789 INFO Request data: System.Collections.Generic.Dictionary`2[System.String,System.Object] 
+2024-12-05 16:10:43.9810 INFO Response data: { CardNumber = 4532015112830366, IsValid = True } 
+2024-12-05 16:14:44.0180 INFO Executing action: CreditCard.API.Controllers.CreditCardController.CreditCardIsValid (CreditCard.API) 
+2024-12-05 16:14:44.0191 INFO Request data: System.Collections.Generic.Dictionary`2[System.String,System.Object] 
+2024-12-05 16:14:44.0191 INFO Response data: { CardNumber = 7518629509085258, IsValid = False } 
+2024-12-05 16:14:51.0441 INFO Executing action: CreditCard.API.Controllers.CreditCardController.CreditCardIsValid (CreditCard.API) 
+2024-12-05 16:14:51.0441 INFO Request data: System.Collections.Generic.Dictionary`2[System.String,System.Object] 
+2024-12-05 16:14:51.0441 INFO Response data: { CardNumber = 7518629509085259, IsValid = False } 
+2024-12-05 16:15:01.4850 INFO Executing action: CreditCard.API.Controllers.CreditCardController.CreditCardIsValid (CreditCard.API) 
+2024-12-05 16:15:01.4850 INFO Request data: System.Collections.Generic.Dictionary`2[System.String,System.Object] 
+2024-12-05 16:15:01.4850 INFO Response data: { CardNumber = 7518629509085259, IsValid = False } 
+2024-12-05 16:45:04.2131 INFO Executing action: CreditCard.API.Controllers.CreditCardController.CreditCardIsValid (CreditCard.API) 
+2024-12-05 16:45:04.2216 INFO Request data: System.Collections.Generic.Dictionary`2[System.String,System.Object] 
+2024-12-05 16:45:04.2236 INFO Response data: { CardNumber = 4532015112830366, IsValid = True } 
+2024-12-05 16:46:12.1159 INFO Executing action: CreditCard.API.Controllers.CreditCardController.CreditCardIsValid (CreditCard.API) 
+2024-12-05 16:46:12.1159 INFO Request data: System.Collections.Generic.Dictionary`2[System.String,System.Object] 
+2024-12-05 16:46:12.1159 INFO Response data: { CardNumber = 1234567812345678, IsValid = False } 
+2024-12-05 16:46:12.4973 INFO Executing action: CreditCard.API.Controllers.CreditCardController.CreditCardIsValid (CreditCard.API) 
+2024-12-05 16:46:12.4973 INFO Request data: System.Collections.Generic.Dictionary`2[System.String,System.Object] 
+2024-12-05 16:46:12.4973 INFO Response data: { CardNumber = 371449635398431, IsValid = True } 
+2024-12-05 16:46:12.8808 INFO Executing action: CreditCard.API.Controllers.CreditCardController.CreditCardIsValid (CreditCard.API) 
+2024-12-05 16:46:12.8810 INFO Request data: System.Collections.Generic.Dictionary`2[System.String,System.Object] 
+2024-12-05 16:46:12.8810 INFO Response data: { CardNumber = 378282246310005, IsValid = True } 
+2024-12-05 16:46:13.2640 INFO Executing action: CreditCard.API.Controllers.CreditCardController.CreditCardIsValid (CreditCard.API) 
+2024-12-05 16:46:13.2640 INFO Request data: System.Collections.Generic.Dictionary`2[System.String,System.Object] 
+2024-12-05 16:46:13.2640 INFO Response data: { CardNumber = 4532015112830366, IsValid = True } 
+2024-12-05 16:46:13.6483 INFO Executing action: CreditCard.API.Controllers.CreditCardController.CreditCardIsValid (CreditCard.API) 
+2024-12-05 16:46:13.6483 INFO Request data: System.Collections.Generic.Dictionary`2[System.String,System.Object] 
+2024-12-05 16:46:13.6483 INFO Response data: { CardNumber = 4532015112830367, IsValid = False } 
+2024-12-05 16:46:14.0188 INFO Executing action: CreditCard.API.Controllers.CreditCardController.CreditCardIsValid (CreditCard.API) 
+2024-12-05 16:46:14.0188 INFO Request data: System.Collections.Generic.Dictionary`2[System.String,System.Object] 
+2024-12-05 16:46:14.0190 INFO Response data: { CardNumber = 5111111111111118, IsValid = True } 
+2024-12-05 16:46:14.4061 INFO Executing action: CreditCard.API.Controllers.CreditCardController.CreditCardIsValid (CreditCard.API) 
+2024-12-05 16:46:14.4061 INFO Request data: System.Collections.Generic.Dictionary`2[System.String,System.Object] 
+2024-12-05 16:46:14.4061 INFO Response data: { CardNumber = 6011514433546201, IsValid = True } 
+2024-12-05 16:46:14.7869 INFO Executing action: CreditCard.API.Controllers.CreditCardController.CreditCardIsValid (CreditCard.API) 
+2024-12-05 16:46:14.7870 INFO Request data: System.Collections.Generic.Dictionary`2[System.String,System.Object] 
+2024-12-05 16:46:14.7870 INFO Response data: { CardNumber = 6011514433546202, IsValid = False } 
+2024-12-05 16:46:15.9323 INFO Executing action: CreditCard.API.Controllers.CreditCardController.CreditCardIsValid (CreditCard.API) 
+2024-12-05 16:46:15.9323 INFO Request data: System.Collections.Generic.Dictionary`2[System.String,System.Object] 
+2024-12-05 16:46:15.9323 INFO Response data: { CardNumber = 4532015112830366, IsValid = True } 
+2024-12-05 16:46:16.3244 INFO Executing action: CreditCard.API.Controllers.CreditCardController.CreditCardIsValid (CreditCard.API) 
+2024-12-05 16:46:16.3244 INFO Request data: System.Collections.Generic.Dictionary`2[System.String,System.Object] 
+2024-12-05 16:46:16.3244 INFO Response data: { CardNumber = 4532015112830366, IsValid = True } 
+2024-12-05 16:47:48.7504 INFO Executing action: CreditCard.API.Controllers.CreditCardController.CreditCardIsValid (CreditCard.API) 
+2024-12-05 16:47:48.7504 INFO Executing action: CreditCard.API.Controllers.CreditCardController.CreditCardIsValid (CreditCard.API) 
+2024-12-05 16:47:48.7514 INFO Request data: System.Collections.Generic.Dictionary`2[System.String,System.Object] 
+2024-12-05 16:47:48.7514 INFO Request data: System.Collections.Generic.Dictionary`2[System.String,System.Object] 
+2024-12-05 16:47:48.7514 INFO Response data: { CardNumber = 1234567812345678, IsValid = False } 
+2024-12-05 16:47:48.7514 INFO Response data: { CardNumber = 1234567812345678, IsValid = False } 
+2024-12-05 16:47:48.8699 INFO Executing action: CreditCard.API.Controllers.CreditCardController.CreditCardIsValid (CreditCard.API) 
+2024-12-05 16:47:48.8699 INFO Request data: System.Collections.Generic.Dictionary`2[System.String,System.Object] 
+2024-12-05 16:47:48.8699 INFO Response data: { CardNumber = 1234567812345678, IsValid = False } 
+2024-12-05 16:47:50.2210 INFO Executing action: CreditCard.API.Controllers.CreditCardController.CreditCardIsValid (CreditCard.API) 
+2024-12-05 16:47:50.2210 INFO Request data: System.Collections.Generic.Dictionary`2[System.String,System.Object] 
+2024-12-05 16:47:50.2213 INFO Response data: { CardNumber = 1234567812345678, IsValid = False } 
+2024-12-05 16:47:53.1866 INFO Executing action: CreditCard.API.Controllers.CreditCardController.CreditCardIsValid (CreditCard.API) 
+2024-12-05 16:47:53.1866 INFO Request data: System.Collections.Generic.Dictionary`2[System.String,System.Object] 
+2024-12-05 16:47:53.1866 INFO Response data: { CardNumber = 1234567812345678, IsValid = False } 
+2024-12-05 16:48:04.5922 INFO Executing action: CreditCard.API.Controllers.CreditCardController.CreditCardIsValid (CreditCard.API) 
+2024-12-05 16:48:04.5928 INFO Request data: System.Collections.Generic.Dictionary`2[System.String,System.Object] 
+2024-12-05 16:48:04.5928 INFO Response data: { CardNumber = 1234567812345678, IsValid = False } 
+2024-12-05 16:48:05.2809 INFO Executing action: CreditCard.API.Controllers.CreditCardController.CreditCardIsValid (CreditCard.API) 
+2024-12-05 16:48:05.2809 INFO Request data: System.Collections.Generic.Dictionary`2[System.String,System.Object] 
+2024-12-05 16:48:05.2809 INFO Response data: { CardNumber = 1234567812345678, IsValid = False } 
+2024-12-05 16:48:05.3645 INFO Executing action: CreditCard.API.Controllers.CreditCardController.CreditCardIsValid (CreditCard.API) 
+2024-12-05 16:48:05.3645 INFO Request data: System.Collections.Generic.Dictionary`2[System.String,System.Object] 
+2024-12-05 16:48:05.3647 INFO Response data: { CardNumber = 1234567812345678, IsValid = False } 
+2024-12-05 16:48:13.0562 INFO Executing action: CreditCard.API.Controllers.CreditCardController.CreditCardIsValid (CreditCard.API) 
+2024-12-05 16:48:13.0572 INFO Request data: System.Collections.Generic.Dictionary`2[System.String,System.Object] 
+2024-12-05 16:48:13.0572 INFO Response data: { CardNumber = 1234567812345678, IsValid = False } 
+2024-12-05 16:48:14.5906 INFO Executing action: CreditCard.API.Controllers.CreditCardController.CreditCardIsValid (CreditCard.API) 
+2024-12-05 16:48:14.5906 INFO Request data: System.Collections.Generic.Dictionary`2[System.String,System.Object] 
+2024-12-05 16:48:14.5906 INFO Response data: { CardNumber = 1234567812345678, IsValid = False } 
+2024-12-05 16:48:40.8179 INFO Executing action: CreditCard.API.Controllers.CreditCardController.CreditCardIsValid (CreditCard.API) 
+2024-12-05 16:48:40.8193 INFO Request data: System.Collections.Generic.Dictionary`2[System.String,System.Object] 
+2024-12-05 16:48:40.8193 INFO Response data: { CardNumber = 1234567812345678, IsValid = False } 
+2024-12-05 16:49:01.7092 INFO Executing action: CreditCard.API.Controllers.CreditCardController.CreditCardIsValid (CreditCard.API) 
+2024-12-05 16:49:01.7106 INFO Request data: System.Collections.Generic.Dictionary`2[System.String,System.Object] 
+2024-12-05 16:49:01.7106 INFO Response data: { CardNumber = 1234567812345678, IsValid = False } 
+2024-12-05 16:56:19.8953 INFO Executing action: CreditCard.API.Controllers.CreditCardController.CreditCardIsValid (CreditCard.API) 
+2024-12-05 16:56:19.8961 INFO Request data: System.Collections.Generic.Dictionary`2[System.String,System.Object] 
+2024-12-05 16:56:19.8961 INFO Response data: { CardNumber = 1234567812345678, IsValid = False } 
+2024-12-05 16:56:20.2835 INFO Executing action: CreditCard.API.Controllers.CreditCardController.CreditCardIsValid (CreditCard.API) 
+2024-12-05 16:56:20.2835 INFO Request data: System.Collections.Generic.Dictionary`2[System.String,System.Object] 
+2024-12-05 16:56:20.2835 INFO Response data: { CardNumber = 371449635398431, IsValid = True } 
+2024-12-05 16:56:20.6634 INFO Executing action: CreditCard.API.Controllers.CreditCardController.CreditCardIsValid (CreditCard.API) 
+2024-12-05 16:56:20.6634 INFO Request data: System.Collections.Generic.Dictionary`2[System.String,System.Object] 
+2024-12-05 16:56:20.6634 INFO Response data: { CardNumber = 378282246310005, IsValid = True } 
+2024-12-05 16:56:21.0581 INFO Executing action: CreditCard.API.Controllers.CreditCardController.CreditCardIsValid (CreditCard.API) 
+2024-12-05 16:56:21.0581 INFO Request data: System.Collections.Generic.Dictionary`2[System.String,System.Object] 
+2024-12-05 16:56:21.0581 INFO Response data: { CardNumber = 4532015112830366, IsValid = True } 
+2024-12-05 16:56:21.4422 INFO Executing action: CreditCard.API.Controllers.CreditCardController.CreditCardIsValid (CreditCard.API) 
+2024-12-05 16:56:21.4422 INFO Request data: System.Collections.Generic.Dictionary`2[System.String,System.Object] 
+2024-12-05 16:56:21.4422 INFO Response data: { CardNumber = 4532015112830367, IsValid = False } 
+2024-12-05 16:56:21.8298 INFO Executing action: CreditCard.API.Controllers.CreditCardController.CreditCardIsValid (CreditCard.API) 
+2024-12-05 16:56:21.8298 INFO Request data: System.Collections.Generic.Dictionary`2[System.String,System.Object] 
+2024-12-05 16:56:21.8298 INFO Response data: { CardNumber = 5111111111111118, IsValid = True } 
+2024-12-05 16:56:22.2119 INFO Executing action: CreditCard.API.Controllers.CreditCardController.CreditCardIsValid (CreditCard.API) 
+2024-12-05 16:56:22.2121 INFO Request data: System.Collections.Generic.Dictionary`2[System.String,System.Object] 
+2024-12-05 16:56:22.2121 INFO Response data: { CardNumber = 6011514433546201, IsValid = True } 
+2024-12-05 16:56:22.5973 INFO Executing action: CreditCard.API.Controllers.CreditCardController.CreditCardIsValid (CreditCard.API) 
+2024-12-05 16:56:22.5973 INFO Request data: System.Collections.Generic.Dictionary`2[System.String,System.Object] 
+2024-12-05 16:56:22.5973 INFO Response data: { CardNumber = 6011514433546202, IsValid = False } 
+2024-12-05 16:56:23.7325 INFO Executing action: CreditCard.API.Controllers.CreditCardController.CreditCardIsValid (CreditCard.API) 
+2024-12-05 16:56:23.7325 INFO Request data: System.Collections.Generic.Dictionary`2[System.String,System.Object] 
+2024-12-05 16:56:23.7325 INFO Response data: { CardNumber = 4532015112830366, IsValid = True } 
+2024-12-05 16:56:24.1183 INFO Executing action: CreditCard.API.Controllers.CreditCardController.CreditCardIsValid (CreditCard.API) 
+2024-12-05 16:56:24.1183 INFO Request data: System.Collections.Generic.Dictionary`2[System.String,System.Object] 
+2024-12-05 16:56:24.1183 INFO Response data: { CardNumber = 4532015112830366, IsValid = True } 
+2024-12-05 16:56:47.1876 INFO Executing action: CreditCard.API.Controllers.CreditCardController.CreditCardIsValid (CreditCard.API) 
+2024-12-05 16:56:47.1876 INFO Executing action: CreditCard.API.Controllers.CreditCardController.CreditCardIsValid (CreditCard.API) 
+2024-12-05 16:56:47.1879 INFO Request data: System.Collections.Generic.Dictionary`2[System.String,System.Object] 
+2024-12-05 16:56:47.1879 INFO Request data: System.Collections.Generic.Dictionary`2[System.String,System.Object] 
+2024-12-05 16:56:47.1879 INFO Response data: { CardNumber = 1234567812345678, IsValid = False } 
+2024-12-05 16:56:47.1879 INFO Response data: { CardNumber = 1234567812345678, IsValid = False } 
+2024-12-05 16:56:47.2876 INFO Executing action: CreditCard.API.Controllers.CreditCardController.CreditCardIsValid (CreditCard.API) 
+2024-12-05 16:56:47.2877 INFO Request data: System.Collections.Generic.Dictionary`2[System.String,System.Object] 
+2024-12-05 16:56:47.2877 INFO Response data: { CardNumber = 1234567812345678, IsValid = False } 
+2024-12-05 16:56:48.7587 INFO Executing action: CreditCard.API.Controllers.CreditCardController.CreditCardIsValid (CreditCard.API) 
+2024-12-05 16:56:48.7588 INFO Request data: System.Collections.Generic.Dictionary`2[System.String,System.Object] 
+2024-12-05 16:56:48.7588 INFO Response data: { CardNumber = 1234567812345678, IsValid = False } 
+2024-12-05 16:56:49.1908 INFO Executing action: CreditCard.API.Controllers.CreditCardController.CreditCardIsValid (CreditCard.API) 
+2024-12-05 16:56:49.1908 INFO Request data: System.Collections.Generic.Dictionary`2[System.String,System.Object] 
+2024-12-05 16:56:49.1908 INFO Response data: { CardNumber = 1234567812345678, IsValid = False } 
+2024-12-05 16:56:49.6779 INFO Executing action: CreditCard.API.Controllers.CreditCardController.CreditCardIsValid (CreditCard.API) 
+2024-12-05 16:56:49.6779 INFO Request data: System.Collections.Generic.Dictionary`2[System.String,System.Object] 
+2024-12-05 16:56:49.6779 INFO Response data: { CardNumber = 1234567812345678, IsValid = False } 
+2024-12-05 16:56:53.9489 INFO Executing action: CreditCard.API.Controllers.CreditCardController.CreditCardIsValid (CreditCard.API) 
+2024-12-05 16:56:53.9489 INFO Request data: System.Collections.Generic.Dictionary`2[System.String,System.Object] 
+2024-12-05 16:56:53.9489 INFO Response data: { CardNumber = 1234567812345678, IsValid = False } 
+2024-12-05 16:56:54.0299 INFO Executing action: CreditCard.API.Controllers.CreditCardController.CreditCardIsValid (CreditCard.API) 
+2024-12-05 16:56:54.0299 INFO Request data: System.Collections.Generic.Dictionary`2[System.String,System.Object] 
+2024-12-05 16:56:54.0299 INFO Response data: { CardNumber = 1234567812345678, IsValid = False } 
+2024-12-05 16:56:54.4376 INFO Executing action: CreditCard.API.Controllers.CreditCardController.CreditCardIsValid (CreditCard.API) 
+2024-12-05 16:56:54.4376 INFO Request data: System.Collections.Generic.Dictionary`2[System.String,System.Object] 
+2024-12-05 16:56:54.4376 INFO Response data: { CardNumber = 1234567812345678, IsValid = False } 
+2024-12-05 16:56:55.0398 INFO Executing action: CreditCard.API.Controllers.CreditCardController.CreditCardIsValid (CreditCard.API) 
+2024-12-05 16:56:55.0400 INFO Request data: System.Collections.Generic.Dictionary`2[System.String,System.Object] 
+2024-12-05 16:56:55.0400 INFO Response data: { CardNumber = 1234567812345678, IsValid = False } 
+2024-12-05 16:56:56.1848 INFO Executing action: CreditCard.API.Controllers.CreditCardController.CreditCardIsValid (CreditCard.API) 
+2024-12-05 16:56:56.1850 INFO Request data: System.Collections.Generic.Dictionary`2[System.String,System.Object] 
+2024-12-05 16:56:56.1850 INFO Response data: { CardNumber = 1234567812345678, IsValid = False } 
+2024-12-05 16:56:57.3904 INFO Executing action: CreditCard.API.Controllers.CreditCardController.CreditCardIsValid (CreditCard.API) 
+2024-12-05 16:56:57.3904 INFO Request data: System.Collections.Generic.Dictionary`2[System.String,System.Object] 
+2024-12-05 16:56:57.3904 INFO Response data: { CardNumber = 1234567812345678, IsValid = False } 
+2024-12-05 16:57:01.8936 INFO Executing action: CreditCard.API.Controllers.CreditCardController.CreditCardIsValid (CreditCard.API) 
+2024-12-05 16:57:01.8940 INFO Request data: System.Collections.Generic.Dictionary`2[System.String,System.Object] 
+2024-12-05 16:57:01.8940 INFO Response data: { CardNumber = 1234567812345678, IsValid = False } 
+2024-12-05 17:00:10.4612 INFO Executing action: CreditCard.API.Controllers.CreditCardController.CreditCardIsValid (CreditCard.API) 
+2024-12-05 17:00:10.4617 INFO Request data: System.Collections.Generic.Dictionary`2[System.String,System.Object] 
+2024-12-05 17:00:10.4617 INFO Response data: { CardNumber = 1234567812345678, IsValid = False } 
+2024-12-05 17:00:10.8554 INFO Executing action: CreditCard.API.Controllers.CreditCardController.CreditCardIsValid (CreditCard.API) 
+2024-12-05 17:00:10.8554 INFO Request data: System.Collections.Generic.Dictionary`2[System.String,System.Object] 
+2024-12-05 17:00:10.8554 INFO Response data: { CardNumber = 371449635398431, IsValid = True } 
+2024-12-05 17:00:11.2606 INFO Executing action: CreditCard.API.Controllers.CreditCardController.CreditCardIsValid (CreditCard.API) 
+2024-12-05 17:00:11.2607 INFO Request data: System.Collections.Generic.Dictionary`2[System.String,System.Object] 
+2024-12-05 17:00:11.2607 INFO Response data: { CardNumber = 378282246310005, IsValid = True } 
+2024-12-05 17:00:11.6515 INFO Executing action: CreditCard.API.Controllers.CreditCardController.CreditCardIsValid (CreditCard.API) 
+2024-12-05 17:00:11.6515 INFO Request data: System.Collections.Generic.Dictionary`2[System.String,System.Object] 
+2024-12-05 17:00:11.6515 INFO Response data: { CardNumber = 4532015112830366, IsValid = True } 
+2024-12-05 17:00:12.0459 INFO Executing action: CreditCard.API.Controllers.CreditCardController.CreditCardIsValid (CreditCard.API) 
+2024-12-05 17:00:12.0459 INFO Request data: System.Collections.Generic.Dictionary`2[System.String,System.Object] 
+2024-12-05 17:00:12.0459 INFO Response data: { CardNumber = 4532015112830367, IsValid = False } 
+2024-12-05 17:00:12.4438 INFO Executing action: CreditCard.API.Controllers.CreditCardController.CreditCardIsValid (CreditCard.API) 
+2024-12-05 17:00:12.4438 INFO Request data: System.Collections.Generic.Dictionary`2[System.String,System.Object] 
+2024-12-05 17:00:12.4438 INFO Response data: { CardNumber = 5111111111111118, IsValid = True } 
+2024-12-05 17:00:12.8469 INFO Executing action: CreditCard.API.Controllers.CreditCardController.CreditCardIsValid (CreditCard.API) 
+2024-12-05 17:00:12.8469 INFO Request data: System.Collections.Generic.Dictionary`2[System.String,System.Object] 
+2024-12-05 17:00:12.8469 INFO Response data: { CardNumber = 6011514433546201, IsValid = True } 
+2024-12-05 17:00:13.2457 INFO Executing action: CreditCard.API.Controllers.CreditCardController.CreditCardIsValid (CreditCard.API) 
+2024-12-05 17:00:13.2458 INFO Request data: System.Collections.Generic.Dictionary`2[System.String,System.Object] 
+2024-12-05 17:00:13.2458 INFO Response data: { CardNumber = 6011514433546202, IsValid = False } 
+2024-12-05 17:00:14.4214 INFO Executing action: CreditCard.API.Controllers.CreditCardController.CreditCardIsValid (CreditCard.API) 
+2024-12-05 17:00:14.4214 INFO Request data: System.Collections.Generic.Dictionary`2[System.String,System.Object] 
+2024-12-05 17:00:14.4214 INFO Response data: { CardNumber = 4532015112830366, IsValid = True } 
+2024-12-05 17:00:14.8285 INFO Executing action: CreditCard.API.Controllers.CreditCardController.CreditCardIsValid (CreditCard.API) 
+2024-12-05 17:00:14.8285 INFO Request data: System.Collections.Generic.Dictionary`2[System.String,System.Object] 
+2024-12-05 17:00:14.8285 INFO Response data: { CardNumber = 4532015112830366, IsValid = True } 
+2024-12-05 17:01:25.1930 INFO Executing action: CreditCard.API.Controllers.CreditCardController.CreditCardIsValid (CreditCard.API) 
+2024-12-05 17:01:25.1940 INFO Request data: System.Collections.Generic.Dictionary`2[System.String,System.Object] 
+2024-12-05 17:01:25.1940 INFO Response data: { CardNumber = 1234567812345678, IsValid = False } 
+2024-12-05 17:01:25.2069 INFO Executing action: CreditCard.API.Controllers.CreditCardController.CreditCardIsValid (CreditCard.API) 
+2024-12-05 17:01:25.2069 INFO Request data: System.Collections.Generic.Dictionary`2[System.String,System.Object] 
+2024-12-05 17:01:25.2069 INFO Response data: { CardNumber = 1234567812345678, IsValid = False } 
+2024-12-05 17:01:27.2769 INFO Executing action: CreditCard.API.Controllers.CreditCardController.CreditCardIsValid (CreditCard.API) 
+2024-12-05 17:01:27.2769 INFO Request data: System.Collections.Generic.Dictionary`2[System.String,System.Object] 
+2024-12-05 17:01:27.2769 INFO Response data: { CardNumber = 371449635398431, IsValid = True } 
+2024-12-05 17:01:27.2865 INFO Executing action: CreditCard.API.Controllers.CreditCardController.CreditCardIsValid (CreditCard.API) 
+2024-12-05 17:01:27.2865 INFO Request data: System.Collections.Generic.Dictionary`2[System.String,System.Object] 
+2024-12-05 17:01:27.2865 INFO Response data: { CardNumber = 371449635398431, IsValid = True } 
+2024-12-05 17:01:29.2531 INFO Executing action: CreditCard.API.Controllers.CreditCardController.CreditCardIsValid (CreditCard.API) 
+2024-12-05 17:01:29.2531 INFO Request data: System.Collections.Generic.Dictionary`2[System.String,System.Object] 
+2024-12-05 17:01:29.2535 INFO Response data: { CardNumber = 378282246310005, IsValid = True } 
+2024-12-05 17:01:29.2696 INFO Executing action: CreditCard.API.Controllers.CreditCardController.CreditCardIsValid (CreditCard.API) 
+2024-12-05 17:01:29.2696 INFO Request data: System.Collections.Generic.Dictionary`2[System.String,System.Object] 
+2024-12-05 17:01:29.2696 INFO Response data: { CardNumber = 378282246310005, IsValid = True } 
+2024-12-05 17:01:31.3736 INFO Executing action: CreditCard.API.Controllers.CreditCardController.CreditCardIsValid (CreditCard.API) 
+2024-12-05 17:01:31.3736 INFO Request data: System.Collections.Generic.Dictionary`2[System.String,System.Object] 
+2024-12-05 17:01:31.3736 INFO Response data: { CardNumber = 4532015112830366, IsValid = True } 
+2024-12-05 17:01:31.4141 INFO Executing action: CreditCard.API.Controllers.CreditCardController.CreditCardIsValid (CreditCard.API) 
+2024-12-05 17:01:31.4141 INFO Request data: System.Collections.Generic.Dictionary`2[System.String,System.Object] 
+2024-12-05 17:01:31.4141 INFO Response data: { CardNumber = 4532015112830366, IsValid = True } 
+2024-12-05 17:01:33.4841 INFO Executing action: CreditCard.API.Controllers.CreditCardController.CreditCardIsValid (CreditCard.API) 
+2024-12-05 17:01:33.4841 INFO Request data: System.Collections.Generic.Dictionary`2[System.String,System.Object] 
+2024-12-05 17:01:33.4841 INFO Response data: { CardNumber = 4532015112830367, IsValid = False } 
+2024-12-05 17:01:33.4960 INFO Executing action: CreditCard.API.Controllers.CreditCardController.CreditCardIsValid (CreditCard.API) 
+2024-12-05 17:01:33.4960 INFO Request data: System.Collections.Generic.Dictionary`2[System.String,System.Object] 
+2024-12-05 17:01:33.4960 INFO Response data: { CardNumber = 4532015112830367, IsValid = False } 
+2024-12-05 17:01:35.7381 INFO Executing action: CreditCard.API.Controllers.CreditCardController.CreditCardIsValid (CreditCard.API) 
+2024-12-05 17:01:35.7381 INFO Request data: System.Collections.Generic.Dictionary`2[System.String,System.Object] 
+2024-12-05 17:01:35.7381 INFO Response data: { CardNumber = 5111111111111118, IsValid = True } 
+2024-12-05 17:01:35.7558 INFO Executing action: CreditCard.API.Controllers.CreditCardController.CreditCardIsValid (CreditCard.API) 
+2024-12-05 17:01:35.7558 INFO Request data: System.Collections.Generic.Dictionary`2[System.String,System.Object] 
+2024-12-05 17:01:35.7558 INFO Response data: { CardNumber = 5111111111111118, IsValid = True } 
+2024-12-05 17:01:38.0096 INFO Executing action: CreditCard.API.Controllers.CreditCardController.CreditCardIsValid (CreditCard.API) 
+2024-12-05 17:01:38.0096 INFO Request data: System.Collections.Generic.Dictionary`2[System.String,System.Object] 
+2024-12-05 17:01:38.0096 INFO Response data: { CardNumber = 6011514433546201, IsValid = True } 
+2024-12-05 17:01:38.0211 INFO Executing action: CreditCard.API.Controllers.CreditCardController.CreditCardIsValid (CreditCard.API) 
+2024-12-05 17:01:38.0211 INFO Request data: System.Collections.Generic.Dictionary`2[System.String,System.Object] 
+2024-12-05 17:01:38.0211 INFO Response data: { CardNumber = 6011514433546201, IsValid = True } 
+2024-12-05 17:01:40.3176 INFO Executing action: CreditCard.API.Controllers.CreditCardController.CreditCardIsValid (CreditCard.API) 
+2024-12-05 17:01:40.3176 INFO Request data: System.Collections.Generic.Dictionary`2[System.String,System.Object] 
+2024-12-05 17:01:40.3176 INFO Response data: { CardNumber = 6011514433546202, IsValid = False } 
+2024-12-05 17:01:40.3305 INFO Executing action: CreditCard.API.Controllers.CreditCardController.CreditCardIsValid (CreditCard.API) 
+2024-12-05 17:01:40.3305 INFO Request data: System.Collections.Generic.Dictionary`2[System.String,System.Object] 
+2024-12-05 17:01:40.3305 INFO Response data: { CardNumber = 6011514433546202, IsValid = False } 
+2024-12-05 17:01:45.7388 INFO Executing action: CreditCard.API.Controllers.CreditCardController.CreditCardIsValid (CreditCard.API) 
+2024-12-05 17:01:45.7392 INFO Request data: System.Collections.Generic.Dictionary`2[System.String,System.Object] 
+2024-12-05 17:01:45.7392 INFO Response data: { CardNumber = 4532015112830366, IsValid = True } 
+2024-12-05 17:01:47.1660 INFO Executing action: CreditCard.API.Controllers.CreditCardController.CreditCardIsValid (CreditCard.API) 
+2024-12-05 17:01:47.1660 INFO Request data: System.Collections.Generic.Dictionary`2[System.String,System.Object] 
+2024-12-05 17:01:47.1660 INFO Response data: { CardNumber = 4532015112830366, IsValid = True } 
+2024-12-05 17:03:17.7681 INFO Executing action: CreditCard.API.Controllers.CreditCardController.CreditCardIsValid (CreditCard.API) 
+2024-12-05 17:03:17.7690 INFO Request data: System.Collections.Generic.Dictionary`2[System.String,System.Object] 
+2024-12-05 17:03:17.7690 INFO Response data: { CardNumber = 4532015112830366, IsValid = True } 
+2024-12-05 17:04:50.9462 INFO Executing action: CreditCard.API.Controllers.CreditCardController.CreditCardIsValid (CreditCard.API) 
+2024-12-05 17:04:50.9462 INFO Request data: System.Collections.Generic.Dictionary`2[System.String,System.Object] 
+2024-12-05 17:04:50.9462 INFO Response data: { CardNumber = 1234567812345678, IsValid = False } 
+2024-12-05 17:04:51.3433 INFO Executing action: CreditCard.API.Controllers.CreditCardController.CreditCardIsValid (CreditCard.API) 
+2024-12-05 17:04:51.3433 INFO Request data: System.Collections.Generic.Dictionary`2[System.String,System.Object] 
+2024-12-05 17:04:51.3433 INFO Response data: { CardNumber = 371449635398431, IsValid = True } 
+2024-12-05 17:04:51.7385 INFO Executing action: CreditCard.API.Controllers.CreditCardController.CreditCardIsValid (CreditCard.API) 
+2024-12-05 17:04:51.7385 INFO Request data: System.Collections.Generic.Dictionary`2[System.String,System.Object] 
+2024-12-05 17:04:51.7385 INFO Response data: { CardNumber = 378282246310005, IsValid = True } 
+2024-12-05 17:04:52.1326 INFO Executing action: CreditCard.API.Controllers.CreditCardController.CreditCardIsValid (CreditCard.API) 
+2024-12-05 17:04:52.1326 INFO Request data: System.Collections.Generic.Dictionary`2[System.String,System.Object] 
+2024-12-05 17:04:52.1326 INFO Response data: { CardNumber = 4532015112830366, IsValid = True } 
+2024-12-05 17:04:52.5326 INFO Executing action: CreditCard.API.Controllers.CreditCardController.CreditCardIsValid (CreditCard.API) 
+2024-12-05 17:04:52.5326 INFO Request data: System.Collections.Generic.Dictionary`2[System.String,System.Object] 
+2024-12-05 17:04:52.5326 INFO Response data: { CardNumber = 4532015112830367, IsValid = False } 
+2024-12-05 17:04:52.9240 INFO Executing action: CreditCard.API.Controllers.CreditCardController.CreditCardIsValid (CreditCard.API) 
+2024-12-05 17:04:52.9240 INFO Request data: System.Collections.Generic.Dictionary`2[System.String,System.Object] 
+2024-12-05 17:04:52.9240 INFO Response data: { CardNumber = 5111111111111118, IsValid = True } 
+2024-12-05 17:04:53.3166 INFO Executing action: CreditCard.API.Controllers.CreditCardController.CreditCardIsValid (CreditCard.API) 
+2024-12-05 17:04:53.3166 INFO Request data: System.Collections.Generic.Dictionary`2[System.String,System.Object] 
+2024-12-05 17:04:53.3166 INFO Response data: { CardNumber = 6011514433546201, IsValid = True } 
+2024-12-05 17:04:53.7048 INFO Executing action: CreditCard.API.Controllers.CreditCardController.CreditCardIsValid (CreditCard.API) 
+2024-12-05 17:04:53.7048 INFO Request data: System.Collections.Generic.Dictionary`2[System.String,System.Object] 
+2024-12-05 17:04:53.7048 INFO Response data: { CardNumber = 6011514433546202, IsValid = False } 
+2024-12-05 17:04:54.9844 INFO Executing action: CreditCard.API.Controllers.CreditCardController.CreditCardIsValid (CreditCard.API) 
+2024-12-05 17:04:54.9844 INFO Request data: System.Collections.Generic.Dictionary`2[System.String,System.Object] 
+2024-12-05 17:04:54.9844 INFO Response data: { CardNumber = 4532015112830366, IsValid = True } 
+2024-12-05 17:04:55.3864 INFO Executing action: CreditCard.API.Controllers.CreditCardController.CreditCardIsValid (CreditCard.API) 
+2024-12-05 17:04:55.3864 INFO Request data: System.Collections.Generic.Dictionary`2[System.String,System.Object] 
+2024-12-05 17:04:55.3864 INFO Response data: { CardNumber = 4532015112830366, IsValid = True } 
+2024-12-05 17:05:37.4465 INFO Executing action: CreditCard.API.Controllers.CreditCardController.CreditCardIsValid (CreditCard.API) 
+2024-12-05 17:05:37.4690 INFO Request data: System.Collections.Generic.Dictionary`2[System.String,System.Object] 
+2024-12-05 17:05:37.4711 INFO Response data: { CardNumber = 1234567812345678, IsValid = False } 
+2024-12-05 17:05:37.8726 INFO Executing action: CreditCard.API.Controllers.CreditCardController.CreditCardIsValid (CreditCard.API) 
+2024-12-05 17:05:37.8726 INFO Request data: System.Collections.Generic.Dictionary`2[System.String,System.Object] 
+2024-12-05 17:05:37.8726 INFO Response data: { CardNumber = 371449635398431, IsValid = True } 
+2024-12-05 17:05:38.2660 INFO Executing action: CreditCard.API.Controllers.CreditCardController.CreditCardIsValid (CreditCard.API) 
+2024-12-05 17:05:38.2660 INFO Request data: System.Collections.Generic.Dictionary`2[System.String,System.Object] 
+2024-12-05 17:05:38.2660 INFO Response data: { CardNumber = 378282246310005, IsValid = True } 
+2024-12-05 17:05:38.6629 INFO Executing action: CreditCard.API.Controllers.CreditCardController.CreditCardIsValid (CreditCard.API) 
+2024-12-05 17:05:38.6629 INFO Request data: System.Collections.Generic.Dictionary`2[System.String,System.Object] 
+2024-12-05 17:05:38.6629 INFO Response data: { CardNumber = 4532015112830366, IsValid = True } 
+2024-12-05 17:05:39.0592 INFO Executing action: CreditCard.API.Controllers.CreditCardController.CreditCardIsValid (CreditCard.API) 
+2024-12-05 17:05:39.0592 INFO Request data: System.Collections.Generic.Dictionary`2[System.String,System.Object] 
+2024-12-05 17:05:39.0594 INFO Response data: { CardNumber = 4532015112830367, IsValid = False } 
+2024-12-05 17:05:39.4569 INFO Executing action: CreditCard.API.Controllers.CreditCardController.CreditCardIsValid (CreditCard.API) 
+2024-12-05 17:05:39.4569 INFO Request data: System.Collections.Generic.Dictionary`2[System.String,System.Object] 
+2024-12-05 17:05:39.4569 INFO Response data: { CardNumber = 5111111111111118, IsValid = True } 
+2024-12-05 17:05:39.8546 INFO Executing action: CreditCard.API.Controllers.CreditCardController.CreditCardIsValid (CreditCard.API) 
+2024-12-05 17:05:39.8546 INFO Request data: System.Collections.Generic.Dictionary`2[System.String,System.Object] 
+2024-12-05 17:05:39.8546 INFO Response data: { CardNumber = 6011514433546201, IsValid = True } 
+2024-12-05 17:05:40.2508 INFO Executing action: CreditCard.API.Controllers.CreditCardController.CreditCardIsValid (CreditCard.API) 
+2024-12-05 17:05:40.2508 INFO Request data: System.Collections.Generic.Dictionary`2[System.String,System.Object] 
+2024-12-05 17:05:40.2508 INFO Response data: { CardNumber = 6011514433546202, IsValid = False } 
+2024-12-05 17:05:41.4430 INFO Executing action: CreditCard.API.Controllers.CreditCardController.CreditCardIsValid (CreditCard.API) 
+2024-12-05 17:05:41.4430 INFO Request data: System.Collections.Generic.Dictionary`2[System.String,System.Object] 
+2024-12-05 17:05:41.4435 INFO Response data: { CardNumber = 4532015112830366, IsValid = True } 
